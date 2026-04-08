@@ -300,11 +300,11 @@ export default function InteractiveCalendar() {
                 ? selectionEnd
                   ? `${format(selectionStart, "MMM d")} - ${format(selectionEnd, "MMM d")}`
                   : format(selectionStart, "MMMM d, yyyy")
-                : "General (No selection)"}
+                : "General"}
             </p>
             <textarea
               className="flex-1 w-full bg-transparent resize-none border-none focus:ring-0 text-slate-600 text-sm leading-relaxed p-0 outline-none placeholder:text-slate-300 custom-scrollbar"
-              placeholder="Jot down notes, trips, or memos for this period..."
+              placeholder="Write down notes, trips, or memos for this period..."
               value={currentNote}
               onChange={handleNoteChange}
               style={{
